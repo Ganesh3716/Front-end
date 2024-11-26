@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Ganesh:hover{
+            background-color: red;
+        }
+        .Ganesh:active{
+            background-color: blue;
+        }
+        .Ganesh:focus{
+            background-color: green;
+        }
+
+        button::after{
+            content: "/@#";
+        }
+        button::before{
+            content: "@";
+        }
+        button::first-letter{
+            color: blue;
+        }
+        button::first-line{
+            color: green;
+        }
+        button::selection{
+            color: black;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="Ganesh">submit</button>
+</body>
+</html>
