@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const person={
+        name:"Ganesh",
+        age:24,
+        greet:function () {
+            console.log(`Hello,my name is ${this.name},age is ${this.age}`);
+            
+        }
+    };
+    person.greet();
+
+
+function CreateBook(title,author) {
+    return {
+        title:title,
+        author:author,
+        describe: function() {
+            console.log(`This book is ${this.title} by ${this.author}`);
+        }
+    }
+}
+const book1=CreateBook('2000','Ganesh');
+const book2=CreateBook('2000','sathi');
+book1.describe();
+book2.describe();
+
+for(let i=0;i<10;i++){
+    console.log(i);
+}
+let j=0
+while(j<10){
+    console.log(j++);
+}
+
+let k=0
+do{
+    console.log(k);
+    k++;
+}while(k<10);
+
+let personn = {name:"Ganesh",age:24,city:"Hyderabad"};
+for(let key in personn){
+    console.log(key+":"+personn[key]);
+
+}
+
+
+let arr=[10,20,30];
+for (let value of arr){
+    console.log(value);
+}
+let calculator = {
+  num1: 30,
+  num2: 25,
+  add() {
+    return this.num1 + this.num2;
+  },
+  subtract() {
+    return this.num1 - this.num2;
+  }
+};
+
+console.log(calculator.add());  
+console.log(calculator.subtract());  
+
+const company = {
+  name: "Green Earth Solutions",
+  employees: [
+    { name: "Emily Carter", position: "Environmental Analyst" },
+    { name: "James Brown", position: "Sustainability Consultant" },
+    { name: "Sophia Martinez", position: "Marketing Specialist" },
+    { name: "Liam Wilson", position: "Operations Manager" }
+  ]
+};
+
+console.log(company);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script> 
+    let car = {
+        brand: "KIA",
+        model: "Seltos",
+        year: 2023
+
+    };
+    console.log(car.brand);
+    console.log(car.model);
+    console.log(car.year);
+
+
+let person = {};
+person.firstname= "Ganesh";
+person.lastname = "Enfiled";
+person.age= "25";
+delete person.age;
+console.log(person);
+
+let book = {
+    title: "pusharaj2",
+    Author: "Sukumar",
+
+};
+function hasProperty(obj,key) {
+    return key in obj;
+}
+console.log(hasProperty(book, "title"));
+console.log(hasProperty(book, "year"));
+
+let student = {
+  name: "Ganesh",
+  age: 24,
+  grade: "A"
+};
+
+for (let key in student) {
+  console.log(`${key}: ${student[key]}`);
+}
+
+
+</script>
+<body>
+    
+</body>
+</html>

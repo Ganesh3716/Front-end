@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+            border: 3px solid blue; width: fit-content;
+            padding: 5px;
+            margin-left: 500px;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamically Add and Delete List Item</h1>
+    <input type="text" id="iteminput" placeholder="Enter item">
+    <button id="addbtn">Add</button>
+
+    <ul id="itemlist"> 
+
+    </ul>
+    <script>
+        let list = document.getElementById('itemlist');
+        let input = document.getElementById('iteminput');
+        let addbtn = document.getElementById('addbtn');
+
+        addbtn.addEventListener('click',()=> {
+            console.log("Ganesh")
+            if (iteminput.value.trim() !=='') {
+                let item = document.createElement('li');
+                item.textContent = iteminput.value;
+                list.appendChild(item);
+                iteminput.value=""
+                
+                let dbtn=document.createElement('button');
+                dbtn.textContent="Delete";
+                item.appendChild(dbtn);
+                dbtn.addEventListener('click',function(){
+                    item.remove();
+                })
+
+                    }
+
+            }
+        );
+
+    </script>
+</body>
+</html>

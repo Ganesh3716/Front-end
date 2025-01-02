@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let name1= {
+        //     name: "Ganesh",
+        //     age: 25
+
+        // };
+        // let name2 = {
+        //     name: "nithin",
+        // };
+        // let name3 = {
+        //     name: "satya",
+        //     age: 26
+        // };
+
+        // let monkey={
+        //     walk(){
+        //         console.log("monkey is walking")
+        //     }
+        // }
+        // let dog={
+        //     __proto__;monkey
+        //     }
+
+
+    //  let nam1={
+    //     name:"Ganesh",
+    //  }
+    //  let nam2={
+    //    name:"Satya"
+    //      }
+    //       function Satya(){
+    //         console.log("Satya is a naughty boy");
+    //       }   
+    //       Satya.call(name,"Chin tapak dum","cdjbkcjeaksam");
+    //       Satya.call(name,"bhhtrgytef");
+
+    let name1 = {
+            name:"satya",
+            batch:"PFS-10"
+        }
+        let name2 = {
+            name:"ganesh",
+            batch:"PFS-10"
+        }
+        function mind(gree1,gree2) {
+            console.log(this.name+ " is bad boy " + gree1);
+        }
+        mind.call(name1,"how are you","good");
+        mind.apply(name2,["hii"])
+        var mindbind = mind.bind(name1);
+        mindbind("Hello")
+
+     </script>
+</body>
+</html>
+
+

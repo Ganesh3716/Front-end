@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Examplest</title>
+</head>
+<body>
+    <h1 id="title">Welcome Man</h1>
+    <h1 id="title">Welcome Man</h1>
+    <h2 class="Ganesh">Satya</h2>
+    <h2 class="Satya">Ganesh</h2>
+    
+    <p>chipak chipak1</p>
+    <p>chipak chipak2</p>
+
+    <script>
+        var ele= document.getElementById("title");
+        ele.style.backgroundColor="#1F216E";
+        ele.style.color='white'
+
+        var elem= document.getElementsByClassName('Satya');
+        elem[0].style.backgroundColor="skyblue";
+
+        var elems= document.getElementsByClassName('Ganesh')
+        elems[0].style.backgroundColor='yellow';
+
+
+        let color=document.querySelectorAll('p')
+        color[1].style.backgroundColor='red'
+
+    </script>
+    
+</body>
+</html>

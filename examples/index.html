@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function factorial(number) {
+    if (number < 0) {
+        throw new Error("Factorial is not defined for negative numbers.");
+    }
+    let result = 1;
+    for (let i = 1; i <= number; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+const input = prompt("Enter a non-negative integer to calculate its factorial:");
+const number = parseInt(input, 10);
+
+if (isNaN(number) || number < 0) {
+    console.error("Please enter a valid non-negative integer.");
+} else {
+    console.log(`The factorial of ${number} is ${factorial(number)}.`);
+}
+
+  
+    </script>
+</body>
+</html>
